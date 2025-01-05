@@ -1,0 +1,43 @@
+.container{
+    
+    position:sticky;
+    top: 2.5rem;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom:1.2rem;
+}
+
+.userImg{
+    border-radius: 50%;
+    object-fit:cover;
+}
+
+.userDetail{
+    display:flex;
+    flex-direction: column;
+}
+
+.username{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.userDesc{
+    font-size: 0.8rem;
+    color:var(--textSoft);
+}
+
+.list{
+    list-style: none;
+}
+
+.cat{
+    color: var(--textsoft);
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 1rem;
+}
