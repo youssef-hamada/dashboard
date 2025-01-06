@@ -41,3 +41,22 @@
     font-size: 1.1rem;
     margin: 1rem;
 }
+
+.logout{
+    padding: 1.2rem;
+    margin: 0.4rem 0rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+    border-radius: 0.8rem;
+    background-color: transparent;
+    border: 0.1rem solid white;
+    /* border: none; */
+    color: var(--text);
+    width: 100%;
+}
+
+.logout:hover{
+    background-color: #2e374a;
+}
