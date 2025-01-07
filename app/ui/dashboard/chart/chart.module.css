@@ -1,0 +1,13 @@
+.container{
+    height: 25rem;
+    background-color: var(--bgSoft);
+    padding:1.2rem;
+    border-radius: 0.8rem;
+      
+}
+
+.title{
+    font-weight: 300;
+    color: var(--textSoft);
+    margin-bottom: 1rem;
+}

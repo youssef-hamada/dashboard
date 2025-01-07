@@ -1,5 +1,6 @@
 .container{
     padding: 1.2rem;
+    margin: 1rem ;
     border-radius: 0.8rem;
     background-color: var(--bgSoft);
     display: flex;
