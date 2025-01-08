@@ -1,0 +1,21 @@
+.container{
+    background-color: var(--bgSoft);
+    margin: 1rem;
+    border-radius: 0.8rem;
+    padding: 0.8rem;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.addBtn{
+    padding: 0.8rem;
+    background-color: #5d57c9;
+    color: var(--text);
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+}

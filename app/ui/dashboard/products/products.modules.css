@@ -1,0 +1,25 @@
+.container {
+    padding: 1.2rem;
+    margin: 1rem;
+    border-radius: 0.8rem;
+    background-color: var(--bgSoft);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    background-color: #2e374a;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+}
+
+.input {
+    background-color: transparent;
+    border: none;
+    color: var(--text);
+    outline: none;
+}

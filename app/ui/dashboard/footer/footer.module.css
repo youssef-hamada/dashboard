@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    margin-top: 1.5rem;
+    padding: 1rem;
+}
+
+.logo{
+    font-weight: bold;
+    color: var(--textSoft);
+}
+
+.text{
+    font-size: 0.8rem;
+}
