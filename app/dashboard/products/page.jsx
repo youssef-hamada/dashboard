@@ -46,7 +46,7 @@ const Products = () => {
             <td>not available</td>
             <td>
               <div className={styles.buttons}>
-                <Link href={"/"}>
+                <Link href={"products/1"}>
                   <button className={`${styles.button} ${styles.view}`}>
                     View
                   </button>
@@ -79,7 +79,7 @@ const Products = () => {
             <td>not available</td>
             <td>
               <div className={styles.buttons}>
-                <Link href={"/"}>
+                <Link href={"products/1"}>
                   <button className={`${styles.button} ${styles.view}`}>
                     View
                   </button>
@@ -112,7 +112,7 @@ const Products = () => {
             <td>not available</td>
             <td>
               <div className={styles.buttons}>
-                <Link href={"/"}>
+                <Link href={"products/1"}>
                   <button className={`${styles.button} ${styles.view}`}>
                     View
                   </button>
@@ -145,7 +145,7 @@ const Products = () => {
             <td>not available</td>
             <td>
               <div className={styles.buttons}>
-                <Link href={"/"}>
+                <Link href={"products/1"}>
                   <button className={`${styles.button} ${styles.view}`}>
                     View
                   </button>
