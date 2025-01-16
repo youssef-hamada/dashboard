@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "@/app/ui/dashboard/products/addProduct/add.module.css";
+import { addProduct } from "@/app/lib/util/actions";
 
 const AddProduct = () => {
   return (
     <div className={styles.container}>
-      <form action="" className={styles.form}>
+      <form action={addProduct} className={styles.form}>
         <input
           name="title"
           type="text"
