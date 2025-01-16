@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "@/app/ui/dashboard/users/addUser/add.module.css";
+import { addUser } from "@/app/lib/util/actions";
 
-const AddProduct = () => {
+const AddUser = () => {
   return (
     <div className={styles.container}>
-      <form action="" className={styles.form}>
+      <form action={addUser} className={styles.form}>
         <input
-          name="title"
+          name="username"
           type="text"
           placeholder="name"
           className={styles.input}
@@ -44,4 +45,4 @@ const AddProduct = () => {
   );
 };
 
-export default AddProduct;
+export default AddUser;
