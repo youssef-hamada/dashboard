@@ -38,6 +38,81 @@ export const addUser = async (formData) => {
   redirect("http://localhost:3000/dashboard/users");
 };
 
+export const updateUser = async (formData) => {
+  "use server";
+  const id = formData.get("id");
+  const username = formData.get("username");
+  const email = formData.get("email");
+  const password = formData.get("password");
+  const phone = formData.get("phone");
+  const address = formData.get("address");
+  const isAdmin = formData.get("isAdmin") === "true"; // Convert to boolean
+  const isActive = formData.get("isActive") === "true";
+
+  try {
+    const updatedFields = {
+      username,
+      email,
+      password,
+      phone,
+      address,
+      isActive,
+      isAdmin,
+    };
+    Object.keys(updatedFields).forEach(
+      (key) =>
+        (updatedFields[key] === "" || undefined) && delete updatedFields[key]
+    );
+
+    await dbConnect();
+
+    await User.findByIdAndUpdate(id, updatedFields);
+  } catch (error) {
+    console.log(error);
+    throw new Error("failed to create user");
+  }
+
+  //   revalidatePath("http://localhost:3000/dashboard/users");
+  redirect("http://localhost:3000/dashboard/users");
+};
+export const updateProduct = async (formData) => {
+  "use server";
+  const id = formData.get("id");
+  const title = formData.get("title");
+  const desc = formData.get("desc");
+  const price = formData.get("price");
+  const stock = formData.get("stock");
+  const color = formData.get("color");
+  const size = formData.get("size");
+  const cat = formData.get("cat");
+
+  try {
+    const updatedFields = {
+      title,
+      desc,
+      price,
+      stock,
+      color,
+      size,
+      cat,
+    };
+    Object.keys(updatedFields).forEach(
+      (key) =>
+        (updatedFields[key] === "" || undefined) && delete updatedFields[key]
+    );
+
+    await dbConnect();
+
+    await Product.findByIdAndUpdate(id, updatedFields);
+  } catch (error) {
+    console.log(error);
+    throw new Error("failed to create user");
+  }
+
+  //   revalidatePath("http://localhost:3000/dashboard/users");
+  redirect("http://localhost:3000/dashboard/products");
+};
+
 export const addProduct = async (formData) => {
   "use server";
   const title = formData.get("title");
