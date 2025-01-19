@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@auth/core": "^0.37.4",
     "@next/eslint-plugin-next": "14.0.1",
     "dotenv": "^16.4.7",
     "mongodb": "^6.12.0",
